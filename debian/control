@@ -1,7 +1,8 @@
 Source: fonts-dejavu
 Section: fonts
 Priority: optional
-Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
 Build-Depends:
  debhelper (>= 9~)
 Build-Depends-Indep:
@@ -9,13 +10,14 @@ Build-Depends-Indep:
  libfont-ttf-perl (>= 0.35),
  perl
 Standards-Version: 3.9.8
-Uploaders:
+XSBC-Pexip-Original-Uploaders:
  Davide Viti <zinosat@tiscali.it>,
  Christian Perrier <bubulle@debian.org>,
  Fabian Greffrath <fabian@debian.org>
 Vcs-Git: https://anonscm.debian.org/git/pkg-fonts/fonts-dejavu.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-fonts/fonts-dejavu.git
 Homepage: http://dejavu-fonts.org/
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ stretch
 
 Package: fonts-dejavu
 Architecture: all
