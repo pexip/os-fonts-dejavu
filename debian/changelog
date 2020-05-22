@@ -1,3 +1,23 @@
+fonts-dejavu (2.37-2) unstable; urgency=medium
+
+  * Drop transitional packages ttf-dejavu, ttf-dejavu-core and
+    ttf-dejavu-extra. Thanks Holger Levsen, Closes: #872809.
+  * Update upstream homepage information. Thanks Theppitak
+    Karoonboonyanan and Vincent Lefevre, Closes: #950203.
+  * Remove Christian Perrier from Uploaders, Closes: #927597.
+  * Apply upstream commit to remove redundant generic name assignment
+    and aliasing from fontconfig configuration. Thanks Jan Niklas
+    Hasse, Closes: #753401.
+  * Bump debhelper-compat to 13.
+  * Bump Standards-Version to 4.5.0.
+  * Update Vcs-* fields to point to the Salsa repository.
+  * Add "Rules-Requires-Root: no".
+  * Update Debian Fonts Task Force mailing list address in the
+    Maintainer field.
+  * Use secure debian/copyright format URI.
+
+ -- Fabian Greffrath <fabian@debian.org>  Fri, 22 May 2020 17:21:43 +0200
+
 fonts-dejavu (2.37-1) unstable; urgency=medium
 
   * Imported Upstream version 2.37.
@@ -72,7 +92,7 @@ fonts-dejavu (2.33+svn2514-1) experimental; urgency=low
   * "New upstream" version (indeed an SVN snapshot as no
     recent upstream release happened). This closes the following
     Debian bugs:
-    - broken Latin letters with dot above at small sizes. 
+    - broken Latin letters with dot above at small sizes.
       Closes: #618310, #647444
   * Rename source package to "fonts-freefont" to fit the Font
     Packages Naming Policy.
@@ -95,7 +115,7 @@ fonts-dejavu (2.33+svn2514-1) experimental; urgency=low
 ttf-dejavu (2.33-3) unstable; urgency=low
 
   [ Ansgar Burchardt ]
-  * debian/rules: Use xz compression for binary packages. 
+  * debian/rules: Use xz compression for binary packages.
     Closes: #683931
 
  -- Christian Perrier <bubulle@debian.org>  Sun, 05 Aug 2012 18:19:22 +0200
@@ -117,16 +137,16 @@ ttf-dejavu (2.33-1) unstable; urgency=low
     - Playing Cards (u1F0A0:u1F0FF)
     - Miscellaneous Symbols And Pictographs (u1F400:u1F4FF)
     - Emoticons (u1F600:u1F64F)
-  
+
  -- Davide Viti <zinosat@tiscali.it>  Mon, 28 Feb 2011 23:29:50 +0100
 
 ttf-dejavu (2.32-1) unstable; urgency=low
 
   * New upstream release
-  * debian/control: 
+  * debian/control:
     - Bump Standards-Version to 3.9.1 (no changes needed)
     - Build-Depends-Indep set to "fontforge-nox | fontforge" to unburden
-      buildds. Drop also version restriction (>= 0.0.20080330)  
+      buildds. Drop also version restriction (>= 0.0.20080330)
   * debian/scripts/generate-udeb.sh:
     - strip Domino Tiles (U+1F030-U+1F09F)
   * debian/watch: revert workaround for broken Sourceforge redirector to
@@ -164,7 +184,7 @@ ttf-dejavu (2.30-1) unstable; urgency=low
 ttf-dejavu (2.29-3) unstable; urgency=low
 
   * scripts/strip_glyphs.pe: re-encode as "unicodeFull" as to
-    deal with glyphs in ranges > uFFFF  
+    deal with glyphs in ranges > uFFFF
   * scripts/generate-udeb.sh: simplify stripping glyphs in high ranges
     (> uFFFF) taking advantage of new version of strip_glyphs.pe
   * debian/control: Bump Standards-Version to 3.8.2
@@ -179,7 +199,7 @@ ttf-dejavu (2.29-2) unstable; urgency=low
   [ Davide Viti ]
   * Bump Build-Depends on debhelper to 5.0.42
   * debian/control: Bump Standards-Version to 3.8.1
-  
+
  -- Davide Viti <zinosat@tiscali.it>  Wed, 25 Mar 2009 21:53:30 +0100
 
 ttf-dejavu (2.29-1) unstable; urgency=low
@@ -238,7 +258,7 @@ ttf-dejavu (2.25-2) unstable; urgency=low
     - Letterlike Symbols
     - Box Drawing
     - Geometric Shapes
-  
+
  -- Davide Viti <zinosat@tiscali.it>  Thu, 24 Jul 2008 22:58:02 +0200
 
 ttf-dejavu (2.25-1) unstable; urgency=low
@@ -267,7 +287,7 @@ ttf-dejavu (2.24-1) unstable; urgency=low
   * debian/control: bump minimal version of fontforge to 0.0.20080203-1
   * Add KOI8-R to Charset / UniCharset in defoma files (closes: #464616)
   * New upstream release
-  
+
  -- Davide Viti <zinosat@tiscali.it>  Mon, 10 Mar 2008 10:34:23 +0100
 
 ttf-dejavu (2.23-1) unstable; urgency=low
@@ -304,7 +324,7 @@ ttf-dejavu (2.21-1) unstable; urgency=low
 
 ttf-dejavu (2.20-1) unstable; urgency=low
 
-  [ Davide Viti ]  
+  [ Davide Viti ]
   * New upstream release (closes: #439083)
   * debian/scripts/generate-udeb.sh:
     - strip Tai Xuan Jing Symbols (U+1D300-U+1D356)
@@ -314,7 +334,7 @@ ttf-dejavu (2.20-1) unstable; urgency=low
     -extra
   * control: remove "Replaces" entry in the ttf-dejavu stanza
   * preinst: add #DEBHELPER# token to avoid lintian warning
-  
+
   [ Eugeniy Meshcheryakov ]
   * Fix URL in watch file
 
