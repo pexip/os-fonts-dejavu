@@ -17,7 +17,7 @@ XSBC-Pexip-Original-Uploaders:
 Vcs-Git: https://anonscm.debian.org/git/pkg-fonts/fonts-dejavu.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-fonts/fonts-dejavu.git
 Homepage: http://dejavu-fonts.org/
-XS-Pexip-Upstream: http://ftp.debian.org/debian/ stretch
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ buster
 
 Package: fonts-dejavu
 Architecture: all
