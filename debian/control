@@ -2,21 +2,21 @@ Source: fonts-dejavu
 Section: fonts
 Priority: optional
 Maintainer: Pexip AS <packaging@pexip.com>
-XSBC-Pexip-Original-Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+XSBC-Pexip-Original-Maintainer: Debian Fonts Task Force <debian-fonts@lists.debian.org>
+XSBC-Pexip-Original-Uploaders:
+ Davide Viti <zinosat@tiscali.it>,
+ Fabian Greffrath <fabian@debian.org>
 Build-Depends:
- debhelper (>= 9~)
+ debhelper-compat (= 13)
 Build-Depends-Indep:
  fontforge-nox | fontforge,
  libfont-ttf-perl (>= 0.35),
  perl
-Standards-Version: 3.9.8
-XSBC-Pexip-Original-Uploaders:
- Davide Viti <zinosat@tiscali.it>,
- Christian Perrier <bubulle@debian.org>,
- Fabian Greffrath <fabian@debian.org>
-Vcs-Git: https://anonscm.debian.org/git/pkg-fonts/fonts-dejavu.git
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-fonts/fonts-dejavu.git
-Homepage: http://dejavu-fonts.org/
+Standards-Version: 4.5.0
+Vcs-Git: https://salsa.debian.org/fonts-team/fonts-dejavu.git
+Vcs-Browser: https://salsa.debian.org/fonts-team/fonts-dejavu
+Homepage: https://dejavu-fonts.github.io/
+Rules-Requires-Root: no
 XS-Pexip-Upstream: http://deb.debian.org/debian/ bullseye
 
 Package: fonts-dejavu
@@ -28,10 +28,6 @@ Depends:
  ${misc:Depends}
 Pre-Depends:
  ${misc:Pre-Depends}
-Replaces:
- ttf-dejavu (<< 2.33+svn2514-2~)
-Breaks:
- ttf-dejavu (<< 2.33+svn2514-2~)
 Description: metapackage to pull in fonts-dejavu-core and fonts-dejavu-extra
  DejaVu provides an expanded version of the Vera font family aiming for
  quality and broader Unicode coverage while retaining the original Vera
@@ -49,12 +45,6 @@ Architecture: all
 Multi-Arch: foreign
 Depends:
  ${misc:Depends}
-Replaces:
- ttf-dejavu (<< 2.20-1),
- ttf-dejavu-core (<< 2.33+svn2514-2~)
-Breaks:
- ttf-dejavu (<< 2.20-1),
- ttf-dejavu-core (<< 2.33+svn2514-2~)
 Pre-Depends:
  ${misc:Pre-Depends}
 Description: Vera font family derivate with additional characters
@@ -66,7 +56,7 @@ Description: Vera font family derivate with additional characters
  .
  This package only contains the sans, sans-bold, serif, serif-bold,
  mono and mono-bold variants. For additional variants, see the
- ttf-dejavu-extra package.
+ fonts-dejavu-extra package.
  .
  DejaVu fonts are intended for use on low-resolution devices (mainly
  computer screens) but can be used in printing as well.
@@ -77,12 +67,6 @@ Multi-Arch: foreign
 Depends:
  fonts-dejavu-core,
  ${misc:Depends}
-Replaces:
- ttf-dejavu (<< 2.20-1),
- ttf-dejavu-extra (<< 2.33+svn2514-2~)
-Breaks:
- ttf-dejavu (<< 2.20-1),
- ttf-dejavu-extra (<< 2.33+svn2514-2~)
 Pre-Depends:
  ${misc:Pre-Depends}
 Description: Vera font family derivate with additional characters (extra variants)
@@ -121,41 +105,3 @@ Description: Monospace Vera font family derivate with additional characters
  .
  DejaVu fonts are intended for use on low-resolution devices (mainly
  computer screens) but can be used in printing as well.
-
-Package: ttf-dejavu
-Depends:
- fonts-dejavu,
- ttf-dejavu-core,
- ttf-dejavu-extra,
- ${misc:Depends}
-Architecture: all
-Section: oldlibs
-Priority: extra
-Pre-Depends:
- ${misc:Pre-Depends}
-Description: transitional dummy package
- This package is a dummy transitional package. It can be safely removed.
-
-Package: ttf-dejavu-core
-Depends:
- fonts-dejavu-core,
- ${misc:Depends}
-Architecture: all
-Section: oldlibs
-Priority: extra
-Pre-Depends:
- ${misc:Pre-Depends}
-Description: transitional dummy package
- This package is a dummy transitional package. It can be safely removed.
-
-Package: ttf-dejavu-extra
-Depends:
- fonts-dejavu-extra,
- ${misc:Depends}
-Architecture: all
-Section: oldlibs
-Priority: extra
-Pre-Depends:
- ${misc:Pre-Depends}
-Description: transitional dummy package
- This package is a dummy transitional package. It can be safely removed.
