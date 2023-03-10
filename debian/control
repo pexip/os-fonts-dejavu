@@ -6,8 +6,10 @@ Build-Depends:
  debhelper-compat (= 13)
 Build-Depends-Indep:
  fontforge-nox | fontforge,
- libfont-ttf-perl (>= 0.35),
- perl
+ libfont-ttf-perl,
+ perl,
+ woff-tools,
+ woff2
 Standards-Version: 4.5.0
 Uploaders:
  Davide Viti <zinosat@tiscali.it>,
@@ -103,3 +105,23 @@ Description: Monospace Vera font family derivate with additional characters
  .
  DejaVu fonts are intended for use on low-resolution devices (mainly
  computer screens) but can be used in printing as well.
+
+Package: fonts-dejavu-web
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ fonts-dejavu,
+ ${misc:Depends}
+Pre-Depends:
+ ${misc:Pre-Depends}
+Recommends:
+ javascript-common,
+Description: Vera font family derivate with additional characters (woff/woff2)
+ DejaVu provides an expanded version of the Vera font family aiming for
+ quality and broader Unicode coverage while retaining the original Vera
+ style. DejaVu currently works towards conformance with the Multilingual
+ European Standards (MES-1 and MES-2) for Unicode coverage. The DejaVu
+ fonts provide serif, sans and monospaced variants.
+ .
+ This package includes the woff/woff2 formats to be used as webfonts on a
+ webserver.

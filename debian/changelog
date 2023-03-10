@@ -1,3 +1,35 @@
+fonts-dejavu (2.37-6) unstable; urgency=medium
+
+  * Touch all generated TTF files with SOURCE_DATE_EPOCH time,
+    Closes: #1032599.
+
+ -- Fabian Greffrath <fabian@debian.org>  Fri, 10 Mar 2023 09:35:35 +0100
+
+fonts-dejavu (2.37-5) unstable; urgency=medium
+
+  [ Paul Menzel ]
+  * debian/control: fonts-dejavu-web: Add missing verb to description
+  * debian/fonts-dejavu-web.README.Debian: Improve spelling and wording
+  * debian/scripts/generate-web.sh: Get rid of ls and grep usage
+
+ -- Fabian Greffrath <fabian@debian.org>  Sun, 26 Feb 2023 07:54:14 +0100
+
+fonts-dejavu (2.37-4) unstable; urgency=medium
+
+  * Source-only upload.
+
+ -- Fabian Greffrath <fabian@debian.org>  Tue, 14 Feb 2023 22:03:51 +0100
+
+fonts-dejavu (2.37-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster (oldstable)
+
+  [ Daniel Baumann ]
+  * Adding fonts-dejavu-web package (Closes: #1030155).
+
+ -- Fabian Greffrath <fabian@debian.org>  Tue, 07 Feb 2023 08:26:57 +0100
+
 fonts-dejavu (2.37-2) unstable; urgency=medium
 
   * Drop transitional packages ttf-dejavu, ttf-dejavu-core and
