@@ -1,3 +1,9 @@
+fonts-dejavu (2.37-6pexip1) pexip-bookworm; urgency=medium
+
+  * Initial bookworm build
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 16 Nov 2023 09:58:58 +0000
+
 fonts-dejavu (2.37-6) unstable; urgency=medium
 
   * Touch all generated TTF files with SOURCE_DATE_EPOCH time,
